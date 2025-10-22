@@ -1,29 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int numero;
-
 int main() {
-    int numero2;
+    int number1, number2; // both are local variables
 
-    cout << "Introduce un numero entero: ";
-    cin >> numero;
+    cout << "Enter the first integer: ";
+    cin >> number1;
 
-    cout << "El numero que introdujiste es: " << numero << endl;
+    cout << "Enter the second integer: ";
+    cin >> number2;
 
-    cout << "Introduce un segundo numero entero: ";
-    cin >> numero2;
-
-    if (numero < numero2) {
-        cout << "El numero " << numero << " es menor que el numero " << numero2 << endl;
-    } 
-    else if (numero > numero2) {
-        cout << "El numero " << numero << " es mayor que el numero " << numero2 << endl;
-    } 
-    else {
-        cout << "Ambos numeros son iguales." << endl;
-    }
+    if (number1 < number2)
+        cout << number1 << " is less than " << number2 << endl;
+    else if (number1 > number2)
+        cout << number1 << " is greater than " << number2 << endl;
+    else
+        cout << "Both numbers are equal." << endl;
 
     return 0;
 }
-
